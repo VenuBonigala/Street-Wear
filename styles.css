@@ -1,0 +1,123 @@
+.dashboard {
+      width: calc(100vw - 40px); /* 20px padding on each side */
+      height: calc(100vh - 40px); /* 20px padding on top and bottom */
+      background-image: url(./images/bg_dashboard.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 20px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-sizing: border-box;
+  }
+  
+  
+  .nav_bar {
+      display: flex;
+      flex-direction: row;
+      align-items: center; /* Align StreetWear text and buttons on the same line */
+      margin-bottom: 20px;
+      gap: 20px;
+  }
+  
+  .bt_dashboard {
+      background-color: transparent;
+      color: white;
+      font-weight: bold;
+      border: none;
+      font-size: 20px;
+      font-family: "Oswald";
+      transition: all 0.15s;
+  }
+  
+  .bt_dashboard:last-child {
+      margin-right: 0; /* Remove margin from last button */
+  }
+  
+  .bt_dashboard:hover {
+      transform: scale(1.15);
+  }
+  
+  .center-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100%; /* Center vertically within .dashboard */
+  }
+  
+  h1 {
+      color: white;
+      font-size: 40px;
+      margin-bottom: 10px; /* Adjust margin as needed to reduce space */
+  }
+  
+  h5 {
+      color: white;
+      font-size: 20px;
+      margin-top: 0; /* Remove extra margin on top */
+  }
+  
+  
+  h3 {
+      color: white;
+      font-size: 30px;
+      margin-right: 30px;
+  }
+
+  .shopnow {
+      height: 50px;
+      width: 100px;
+      background-color: white;
+      border: none;
+      border-radius: 25px;
+      font-family: 'oswald';
+      font-size: 15px;
+      transition: all 0.15s;
+  }
+  .shopnow:hover {
+      transform: scale(1.15);
+  }
+
+  @media (max-width: 768px) {
+    .dashboard {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        padding: 10px;
+    }
+
+    .nav_bar {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .bt_dashboard {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 24px;
+        margin-right: 0;
+    }
+
+    .center-content h1 {
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+
+    .center-content h5 {
+        font-size: 16px;
+    }
+
+    .shopnow {
+        height: 45px;
+        width: 120px;
+        font-size: 14px;
+    }
+}
