@@ -1,0 +1,150 @@
+/* General reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main container for centering content */
+.payment-container {
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Payment section heading */
+.payment-section h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Flexbox layout for cart items and card details */
+.payment-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.cart-items {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.cart-items .cart-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-details {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-details h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form styling */
+.payment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.input-field {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: #4CAF50;
+}
+
+.submit-button {
+    padding: 12px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+.submit-button:active {
+    background-color: #388e3c;
+}
+
+/* Small adjustments for responsive design */
+@media screen and (max-width: 768px) {
+    .payment-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cart-items, .card-details {
+        flex: none;
+        width: 100%;
+    }
+}
+
+
+/* Styling for the "Remove" button (X) */
+.remove-button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50%; /* Makes it a circle */
+    width: 30px; /* Set the size of the circle */
+    height: 30px; /* Set the size of the circle */
+    display: flex;
+    align-items: center; /* Centers the content vertically */
+    justify-content: center; /* Centers the content horizontally */
+    font-size: 18px; /* Size of the X */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+    background-color: #555; /* Darker shade on hover */
+}

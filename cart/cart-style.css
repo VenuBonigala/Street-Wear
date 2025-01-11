@@ -1,0 +1,140 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the cart section */
+body, html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Cart Section Styles */
+.cart-section {
+    width: 600px;
+    max-width: 700px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Heading */
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Cart Items Styles */
+.cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    color: #333;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.cart-item-details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.cart-item-name {
+    font-weight: bold;
+}
+
+.cart-item-price {
+    color: #888;
+}
+
+/* Cart Total Section */
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 2px solid #eee;
+    color: #333;
+}
+
+/* Checkout Button Styles */
+.checkout-button {
+    padding: 12px 25px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+.checkout-button:hover {
+    background-color: #0056b3;
+}
+
+.checkout-button:active {
+    background-color: #003f7f;
+}
+
+
+
+
+
+/* Style for the Remove button */
+.remove-button {
+    background-color: black;  /* Black background */
+    color: white;  /* White text (X) */
+    border: none;  /* No border */
+    border-radius: 50%;  /* Circular shape */
+    width: 30px;  /* Width of the button */
+    height: 30px;  /* Height of the button */
+    display: flex;
+    justify-content: center;  /* Center the 'X' horizontally */
+    align-items: center;  /* Center the 'X' vertically */
+    cursor: pointer;  /* Change cursor on hover */
+    font-size: 18px;  /* Font size for the 'X' */
+    transition: background-color 0.3s;  /* Smooth transition for hover effect */
+    padding: 0;  /* Remove default padding */
+}
+
+.remove-button:hover {
+    background-color: #333;  /* Darker black on hover */
+}
+
+.remove-button:active {
+    background-color: #555;  /* Even darker on click */
+}
