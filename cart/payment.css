@@ -1,4 +1,3 @@
-/* General reset and styling */
 * {
     margin: 0;
     padding: 0;
@@ -13,8 +12,6 @@ body {
     align-items: center;
     height: 100vh;
 }
-
-/* Main container for centering content */
 .payment-container {
     width: 100%;
     max-width: 900px;
@@ -23,15 +20,11 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-/* Payment section heading */
 .payment-section h1 {
     text-align: center;
     color: #333;
     margin-bottom: 20px;
 }
-
-/* Flexbox layout for cart items and card details */
 .payment-content {
     display: flex;
     justify-content: space-between;
@@ -65,7 +58,6 @@ body {
     color: #333;
 }
 
-/* Form styling */
 .payment-form {
     display: flex;
     flex-direction: column;
@@ -115,7 +107,6 @@ body {
     background-color: #388e3c;
 }
 
-/* Small adjustments for responsive design */
 @media screen and (max-width: 768px) {
     .payment-content {
         flex-direction: column;
@@ -128,23 +119,21 @@ body {
     }
 }
 
-
-/* Styling for the "Remove" button (X) */
 .remove-button {
     background-color: black;
     color: white;
     border: none;
-    border-radius: 50%; /* Makes it a circle */
-    width: 30px; /* Set the size of the circle */
-    height: 30px; /* Set the size of the circle */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
     display: flex;
-    align-items: center; /* Centers the content vertically */
-    justify-content: center; /* Centers the content horizontally */
-    font-size: 18px; /* Size of the X */
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .remove-button:hover {
-    background-color: #555; /* Darker shade on hover */
+    background-color: #555;
 }
